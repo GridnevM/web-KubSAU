@@ -1,16 +1,29 @@
-.r1{
+@font-face {
+    font-family: "Bliss Pro";
+    src: url("./../../fonts/BlissPro-ExtraLight.ttf")
+  }
+  .r1 {
+    position: relative; /* Устанавливаем позицию как относительную */
     width: 282px;
     height: 378px;
-    border-radius: 20px 0px 0px 0px;
+    margin-top: 290px;
+    margin-left: 120px;
+    border-radius: 20px; /* Устанавливаем радиус скругления углов */
+    cursor: pointer;
     background: #287828;
-
 }
-.Photo1{
-    width: 248px;
-    height: 220px;
-    top: 30px;
-    left: 17px;
-    gap: 0px;
-    opacity: 0px;
 
+.text1 {
+    position: absolute; /* Устанавливаем позицию как абсолютную */
+    top: 50px; /* Положение от верхнего края блока .r1 */
+    margin-left: 140px; /* Положение от левого края блока .r1 */
+    transform: translate(-50%, -50%); /* Центрируем текст относительно блока .r1 */
+    width: 228px;
+    height: 600px;
+    color: #F1F1F1;
+    font-family: "Bliss Pro", sans-serif; /* Указываем шрифт */
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1.2; /* Задаем высоту строки */
+    text-align: center; /* Центрируем текст */
 }
