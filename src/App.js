@@ -1,30 +1,23 @@
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-import Main from "./pages/Main/Main";
-import University from "./pages/University/University";
-import Korpusa from "./pages/Korpusa/Korpus";
-import Musei from "./pages/Musei/Musei";
-import Dendrik from "./pages/Dendrik/Dendrik";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      
-      <Router>
-      <Header/>
-        <Routes>
-          <Route path = "/" element={<Main/>}/>
-          <Route path = "/University" element={<University/>}/>
-          <Route path="/Korpusa" element={<Korpusa/>}/>
-          <Route path="/Musei" element={<Musei/>}/>
-          <Route path="/Dendrik" element={<Dendrik/>}/>
-        </Routes>
-        <Footer/>
-      </Router>
-   
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
 
   );
