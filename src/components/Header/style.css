@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Bliss Pro";
+    src: url("./../../fonts/BlissPro-ExtraLight.ttf")
+}
+.Header{
+    width: auto;
+    height: 60px;
+     background: #287828;
+}
+.logo img {
+    vertical-align: center;
+    width: 35px;
+    height: 59.17px;
+    top: 18px;
+    left: 936px;
+    margin-right: 128px;
+    cursor: pointer;
+}
+
+.menu-list{
+    list-style: none;
+    display: flex;
+}
+.menu-university{
+    width: 131px;
+    height: 24px;
+    top: 18px;
+    margin-left: 367px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.88px;
+    text-align: left;
+    color: #F7F7F7;
+    margin-right: 148px;
+}    
+
+.menu-korpusa{
+    width: 89px;
+    height: 24px;
+    top: 18px;
+    left: 690px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.88px;
+    text-align: left;
+    margin-right: 128px;
+    color: #F7F7F7;
+}
+.menu-musei{
+    width: 64px;
+    height: 24px;
+    top: 18px;
+    left: 1110px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.88px;
+    text-align: left;
+    margin-right: 148px;
+    color: #F7F7F7;
+    
+}
+.menu-garden{
+    width: 115px;
+    height: 24px;
+    top: 18px;
+    left: 1342px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.88px;
+    text-align: left;
+    margin-right: 422px;
+    color: #F7F7F7;
+}
