@@ -15,13 +15,15 @@
 
 .Photo {
   position: absolute;
-  width: 1200px;
+  width: auto;
   height: 420px;
   margin-top: 40px;
-  margin-left: 120px;
+  margin-left: 300px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 3 колонки с равным размером */
-  grid-gap: 10px; /* расстояние между изображениями */
+  grid-template-columns: repeat(4, 1fr); /* 4 колонки с равным размером */
+  grid-gap: 24px; /* расстояние между изображениями */
+  justify-content: center; /* Выравнивание содержимого по центру по горизонтали */
+  align-items: center; /* Выравнивание содержимого по центру по вертикали */
 }
 
 .photo {
@@ -43,7 +45,6 @@
 .photo4 { grid-column: 1; grid-row: 2; }
 .photo5 { grid-column: 2; grid-row: 2; }
 .photo6 { grid-column: 3; grid-row: 2; }
-.photo7 { grid-column: 4; grid-row: 1; }
-
+.photo7 { grid-column: 4; grid-row: span 2; }
 
 
