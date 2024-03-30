@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Bliss Pro";
+    src: url("./../../fonts/BlissPro-ExtraLight.ttf")
+}
+.p{
+    width: auto;
+    height: auto;
+    padding: 2030px 100px;
+    margin-left: 1200px;
+}

@@ -32,6 +32,7 @@
     text-align: left;
     color: #F7F7F7;
     margin-right: 148px;
+    cursor: pointer;
 }    
 
 .menu-korpusa{
@@ -45,6 +46,7 @@
     text-align: left;
     margin-right: 128px;
     color: #F7F7F7;
+    cursor: pointer;
 }
 .menu-musei{
     width: 64px;
@@ -57,6 +59,7 @@
     text-align: left;
     margin-right: 148px;
     color: #F7F7F7;
+    cursor: pointer;
     
 }
 .menu-garden{
@@ -70,4 +73,5 @@
     text-align: left;
     margin-right: 422px;
     color: #F7F7F7;
+    cursor: pointer;
 }
