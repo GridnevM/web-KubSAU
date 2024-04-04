@@ -1,9 +1,9 @@
 import "./style.css"
-
 const Footer = () => {
+   
     return ( 
         <div className="Footer">
-            <p>подвал</p>
+            <p>podval</p>
         </div>
      );
 }

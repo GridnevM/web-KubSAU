@@ -35,6 +35,15 @@
     cursor: pointer;
 }    
 
+.menu_link {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: inherit; /* Наследуем цвет от родителя */
+}
+
+.menu_link:hover {
+    color: inherit; /* Цвет при наведении остаётся тем же, что и изначальный */
+}
+
 .menu-korpusa{
     width: 89px;
     height: 24px;

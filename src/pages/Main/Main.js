@@ -6,6 +6,7 @@ import main_page4 from"./../../img/main_page4.png";
 import main_page5 from"./../../img/main_page5.png";
 import main_page6 from"./../../img/main_page6.png";
 import main_page7 from"./../../img/main_page7.png";
+import { NavLink } from "react-router-dom";
 const Main = () => {
     return (  
           <div className="Main">        
@@ -39,12 +40,11 @@ const Main = () => {
               <div className="text1">
                 <p>Кубанский государственный аграрный университет - вуз с богатой историей и просторной территорией, на территории 174га расположилось  учебных корпусов, спортивный комплекс с бассейном и скалодромом, а также большое количество..... dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
+                <NavLink to="/University">
                 <button className="button">
                   Увидеть больше!
                   </button>
-          
-
-
+                  </NavLink>
             </div>    
    
         

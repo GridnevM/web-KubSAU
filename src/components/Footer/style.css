@@ -2,9 +2,14 @@
     font-family: "Bliss Pro";
     src: url("./../../fonts/BlissPro-ExtraLight.ttf")
 }
-.p{
-    width: auto;
-    height: auto;
-    padding: 2030px 100px;
-    margin-left: 1200px;
+
+.Footer{
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #262726; /* Цвет фона вашего подвала */
+    color: white; /* Цвет текста вашего подвала */
+    text-align: center; /* Выравнивание содержимого по центру */
+    padding: 0px; /* Отступы вокруг содержимого */
 }
