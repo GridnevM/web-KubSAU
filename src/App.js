@@ -1,6 +1,5 @@
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
-import Slider from "./components/Slider/Slider";
 import Main from "./pages/Main/Main";
 import University from "./pages/University/University";
 import Korpusa from "./pages/Korpusa/Korpus";
@@ -13,7 +12,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Slider/>
+      
       <Router>
       <Header/>
         <Routes>
@@ -25,7 +24,6 @@ function App() {
         </Routes>
         <Footer/>
       </Router>
-      
    
     </div>
 
