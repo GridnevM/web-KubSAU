@@ -1,5 +1,5 @@
 import './../../components/Header/Header';
-import './../../components/Footer/Footer';
+import './../../components/Slider/Slider';
 const University = () => {
     return (  
         <>
