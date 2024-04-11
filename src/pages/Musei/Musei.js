@@ -8,7 +8,7 @@ const Musei = () => {
             <div className="photo1">
                 <img src="main_page" alt=""/>
             </div>
-            <div className="text1">
+            <div className="text12">
                <p>Исторический музей</p>
             </div>
          </div>
