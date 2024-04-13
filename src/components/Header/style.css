@@ -1,86 +1,42 @@
 @font-face {
     font-family: "Bliss Pro";
-    src: url("./../../fonts/BlissPro-ExtraLight.ttf")
-}
-.Header{
-    width: auto;
-    height: 60px;
-     background: #287828;
-}
-.logo img {
-    vertical-align: center;
-    width: 35px;
-    height: 59.17px;
-    top: 18px;
-    left: 936px;
-    margin-right: 128px;
-    cursor: pointer;
+    src: url("./../../fonts/BlissPro-ExtraLight.ttf");
 }
 
-.menu-list{
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    background: #287828;
+    color: #F7F7F7;
+}
+
+.logo img {
+    width: 50px; /* Adjusted for better scaling */
+    height: auto;
+}
+
+.menu-list {
     list-style: none;
     display: flex;
+    gap: 20px; /* Adjusted spacing */
 }
-.menu-university{
-    width: 131px;
-    height: 24px;
-    top: 18px;
-    margin-left: 367px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 23.88px;
-    text-align: left;
-    color: #F7F7F7;
-    margin-right: 148px;
-    cursor: pointer;
-}    
 
 .menu_link {
-    text-decoration: none; /* Убираем подчеркивание */
-    color: inherit; /* Наследуем цвет от родителя */
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px; /* Reduced font size for better appearance */
 }
 
-.menu_link:hover {
-    color: inherit; /* Цвет при наведении остаётся тем же, что и изначальный */
-}
+@media (max-width: 768px) {
+    .Header {
+        flex-direction: column;
+        text-align: center;
+    }
 
-.menu-korpusa{
-    width: 89px;
-    height: 24px;
-    top: 18px;
-    left: 690px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 23.88px;
-    text-align: left;
-    margin-right: 128px;
-    color: #F7F7F7;
-    cursor: pointer;
-}
-.menu-musei{
-    width: 64px;
-    height: 24px;
-    top: 18px;
-    left: 1110px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 23.88px;
-    text-align: left;
-    margin-right: 148px;
-    color: #F7F7F7;
-    cursor: pointer;
-    
-}
-.menu-garden{
-    width: 115px;
-    height: 24px;
-    top: 18px;
-    left: 1342px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 23.88px;
-    text-align: left;
-    margin-right: 422px;
-    color: #F7F7F7;
-    cursor: pointer;
+    .menu-list {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
