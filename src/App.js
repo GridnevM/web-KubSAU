@@ -4,6 +4,7 @@ import Main from "./pages/Main/Main";
 import University from "./pages/University/University";
 import Korpusa from "./pages/Korpusa/Korpus";
 import Musei from "./pages/Musei/Musei";
+import Musei1 from "./pages/Musei/Musei1";
 import Dendrik from "./pages/Dendrik/Dendrik";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -20,6 +21,7 @@ function App() {
           <Route path = "/University" element={<University/>}/>
           <Route path="/Korpusa" element={<Korpusa/>}/>
           <Route path="/Musei" element={<Musei/>}/>
+          <Route path="/Musei1" element={<Musei1/>}/>
           <Route path="/Dendrik" element={<Dendrik/>}/>
         </Routes>
         <Footer/>
