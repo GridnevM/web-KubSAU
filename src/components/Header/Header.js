@@ -6,9 +6,11 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
     return (
         <div className="Header">
-            <NavLink to="/" className="logo">
-                <img src={logo} alt="logo" />
-            </NavLink>
+            <div className="logo-container">
+                <NavLink to="/" className="logo">
+                    <img src={logo} alt="logo" />
+                </NavLink>
+            </div>
             <ul className="menu-list">
                 <li><NavLink to="/University" className="menu_link">УНИВЕРСИТЕТ</NavLink></li>
                 <li><NavLink to="/Korpusa" className="menu_link">КОРПУСА</NavLink></li>
@@ -18,5 +20,5 @@ const Header = () => {
         </div>
     );
 }
- 
+
 export default Header;

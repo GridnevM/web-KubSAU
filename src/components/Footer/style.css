@@ -23,18 +23,28 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     text-align: left;
+  
 }
 
+.telpot a {
+    display: inline-block; /* Make sure the padding affects the layout */
+    padding-right: 10px; /* Consistent right padding */
+    text-decoration: none;
+     /* Removes underline from links */
+}
+
+/* Remove the specific padding-right from .telepot-text since it is now controlled at the anchor level */
 .telpot .telepot-text {
     color: #FFFFFF;
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
-    padding-right: 10px;
     letter-spacing: 0.02em;
     text-decoration: none;
     text-align: right;
+    padding: 10px;
 }
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

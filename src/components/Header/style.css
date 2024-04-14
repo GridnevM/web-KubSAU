@@ -3,36 +3,58 @@
     src: url("./../../fonts/BlissPro-ExtraLight.ttf");
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
 .Header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 5%;
+    justify-content: center;
+    padding: 10px 0; /* Removing left and right padding */
     background: #287828;
     color: #F7F7F7;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .logo img {
-    width: 50px; /* Adjusted for better scaling */
+    width: 50px;
     height: auto;
 }
 
 .menu-list {
     list-style: none;
     display: flex;
-    gap: 20px; /* Adjusted spacing */
+    justify-content: space-around; /* Even distribution around the logo */
+    width: 100%;
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    gap: 20px;
 }
 
 .menu_link {
     text-decoration: none;
     color: inherit;
-    font-size: 16px; /* Reduced font size for better appearance */
+    font-size: 16px;
 }
 
 @media (max-width: 768px) {
     .Header {
         flex-direction: column;
         text-align: center;
+    }
+
+    .logo-container {
+        margin-bottom: 10px; /* Space between logo and menu in mobile view */
     }
 
     .menu-list {
