@@ -41,7 +41,7 @@ html, body {
 .menu_link {
     text-decoration: none; /* Removes underline from links */
     color: #FFFFFF; /* Sets the text color to white */
-    font-size: 16px;
+    font-size: 25px;
     padding: 0 20px; /* Add some padding for spacing */
 }
 

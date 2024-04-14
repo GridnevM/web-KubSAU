@@ -3,11 +3,24 @@
     src: url("./../../fonts/BlissPro-ExtraLight.ttf");
 }
 
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
 .Footer {
+    margin-top: auto; /* Pushes the footer to the bottom */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: relative; /* Changed from fixed to relative */
     left: 0;
     bottom: 0;
     width: 100%;
