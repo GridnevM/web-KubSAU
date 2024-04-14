@@ -11,14 +11,15 @@ const Footer = () => {
             </a>
         </div>
         <div className="telpot">
-    <a href="mailto:mail@kubsau.ru">
-        <span className="telepot-text">mail@kubsau.ru</span>
-    </a>
-    <br />
-    <a href="tel:+78612215942">
-        <span className="telepot-text">+7 (861) 221-59-42</span>
-    </a>
-</div>
+        <a href="mailto:mail@kubsau.ru">
+        <span className="telepot-text" >mail@kubsau.ru</span>
+        </a>
+   
+            <br /> 
+            <a href="tel:+78612215942">
+                <span className="telepot-text" >+7 (861) 221-59-42</span>
+            </a>
+        </div>
     </div>
      );
 }

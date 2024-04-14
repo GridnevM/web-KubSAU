@@ -12,39 +12,42 @@ html, body {
 .Header {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 10px 0; /* Removing left and right padding */
+    justify-content: space-between; /* Changed to space-between for proper alignment */
+    padding: 10px 0;
     background: #287828;
     color: #F7F7F7;
     width: 100%;
     box-sizing: border-box;
 }
 
+.menu-group {
+    display: flex;
+    justify-content: space-around;
+    flex: 1; /* Makes both groups take up equal space */
+}
+
 .logo-container {
+    flex: 0 1 auto; /* Prevents logo from growing or shrinking */
     display: flex;
     justify-content: center;
-    width: 100%;
+    align-items: center;
 }
 
 .logo img {
-    width: 50px;
+    width: 50px; /* Adjust size as needed */
     height: auto;
 }
 
-.menu-list {
-    list-style: none;
-    display: flex;
-    justify-content: space-around; /* Even distribution around the logo */
-    width: 100%;
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
-    gap: 20px;
+.menu_link {
+    text-decoration: none; /* Removes underline from links */
+    color: #FFFFFF; /* Sets the text color to white */
+    font-size: 16px;
+    padding: 0 20px; /* Add some padding for spacing */
 }
 
-.menu_link {
-    text-decoration: none;
-    color: inherit;
-    font-size: 16px;
+.menu_link:hover, .menu_link:active {
+    text-decoration: none; /* Ensures no underline on hover/active */
+    color: #FFFFFF; /* Keeps text color white on hover/active */
 }
 
 @media (max-width: 768px) {
@@ -53,12 +56,17 @@ html, body {
         text-align: center;
     }
 
-    .logo-container {
-        margin-bottom: 10px; /* Space between logo and menu in mobile view */
+    .menu-group {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
-    .menu-list {
-        flex-direction: column;
-        gap: 10px;
+    .menu-group .menu_link {
+        padding: 5px 0; /* Adjust padding for vertical layout */
+    }
+
+    .logo-container {
+        order: -1; /* Moves the logo container to the top */
     }
 }
