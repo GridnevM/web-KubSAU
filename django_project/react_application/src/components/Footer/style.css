@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Bliss Pro";
+    src: url("./../../fonts/BlissPro-ExtraLight.ttf")
+}
+
+.Footer {
+    display: flex; /* Используем flexbox */
+    justify-content:space-between; /* Распределяем элементы по краям контейнера */
+    align-items: center; /* Выравниваем по вертикали */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #262726; /* Цвет фона вашего подвала */
+    padding: 10px; /* Отступы вокруг содержимого */
+}
+
+.adres .address-text {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    text-align: left;
+}
+
+.telpot .telepot-text {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    padding-right: 10px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    text-align: right;
+}
