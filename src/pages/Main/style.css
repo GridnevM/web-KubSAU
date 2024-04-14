@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Bliss Pro";
-  src: url("./../../fonts/BlissPro-ExtraLight.ttf")
+  src: url("./../../fonts/BlissPro-ExtraLight.ttf");
 }
 
 .text, .text1 {
@@ -11,6 +11,16 @@
   line-height: 1.4; /* Устанавливаем высоту строки */
   text-align: center;
   word-wrap: break-word; /* Перенос слов при достижении краев */
+}
+
+.text {
+  font-size: calc(20px + (34 - 20) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: bold; /* Делаем текст жирным */
+}
+
+.text1 {
+  font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300))); /* Адаптивный размер шрифта */
+  text-align: left; /* Выравнивание текста по левому краю */
 }
 
 .Photo {
@@ -46,20 +56,32 @@
 .photo77 { grid-column: 4; grid-row: span 2; }
 
 
+.buttonWrapper {
+  text-align: right; /* Изменено выравнивание кнопки по правому краю */
+}
 
 .button {
   color: #ffffff;
+  width: auto;
+  height: auto;
+  border: none;
+  margin-bottom: 120px;
+  margin-left: 1190px;
+  margin-right: 120px;
+  border-radius: 30px; /* Значение может быть изменено в зависимости от желаемого радиуса */
+  padding: 20px 67px ;
+  font-size: 18px;
+  cursor: pointer;
   background-color: #287828;
-  border-radius: 30px; /* Радиус скругления углов */
-  padding: 20px 67px; /* Внутренние отступы */
-  font-size: 18px; /* Размер шрифта */
-  cursor: pointer; /* Курсор в виде указателя */
-  border: none; /* Без рамки */
-  text-align: center; /* Текст по центру */
-  display: inline-block; /* Элемент как блочно-строчный */
-  margin: 20px 0; /* Внешние отступы сверху и снизу */
-  
-}
+  }
+
+  @media (max-width: 1400px) {
+    .button {
+      margin-left: auto; /* Центрируем кнопку по горизонтали */
+      margin-right: auto; /* Центрируем кнопку по горизонтали */
+      display: block; /* Блочное отображение для правильного центрирования */
+    }
+  }
 
 @media (max-width: 768px) {
   .Photo {
@@ -78,23 +100,24 @@
   .photo44 { grid-row: 2; }
   .photo55 { grid-row: 3; }
   .photo66 { grid-row: 3; }
-  
   .photo77 {
     grid-column: 1 / -1; /* Фото 7 занимает всю ширину сетки */
     grid-row: 4; /* Фото 7 перемещается на четвертую строку */
   }
 
-  .text, .text1 {
-    font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (768 - 300))); /* Меньший размер шрифта */
+  .text {
+    font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (768 - 300))); /* Меньший размер шрифта */
+  }
+
+  .text1 {
+    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (768 - 300))); /* Меньший размер шрифта */
   }
 
   /* Стили для кнопки на экранах шириной до 768 пикселей */
   .button {
-    position: relative; /* Меняем позиционирование на относительное */
-    width: auto; /* Возвращаем ширину кнопки к автоматической */
-    margin: 20px 0; /* Добавляем верхний и нижний отступы */
-    float: right; /* Прижимаем кнопку к правому краю */
-    clear: both; /* Обеспечиваем, чтобы кнопка не перекрывалась другими элементами */
+    width: auto;
+    margin: 20px 10px 20px 0; /* Обновлено для адаптивного отступа */
+    float: right; /* Обновлено для выравнивания кнопки справа */
   }
 }
 /* Адаптивность для маленьких экранов, например мобильных телефонов */
@@ -115,15 +138,14 @@
     grid-row: span 2;
   }
 
-  /* Адаптивность для текста */
-  .text, .text1 {
-    font-size: 16px; /* Фиксированный размер шрифта на маленьких экранах */
+  .text, .text1, {
+    font-size: 14px; /* Фиксированный размер шрифта на маленьких экранах */
   }
   
   /* Кнопка тоже должна быть адаптивной */
   .button {
-    width: 100%; /* На маленьких экранах делаем кнопку на всю ширину */
-    margin: 10px 0; /* Уменьшаем отступы */
+    width: 100%;
+    margin: 10px 0;
     float: none; /* Убираем обтекание */
   }
 }
