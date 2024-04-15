@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "Bliss Pro";
+    src: url("./../../fonts/BlissPro-ExtraLight.ttf");
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Changed to space-between for proper alignment */
+    padding: 10px 0;
+    background: #287828;
+    color: #F7F7F7;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.menu-group {
+    display: flex;
+    justify-content: space-around;
+    flex: 1; /* Makes both groups take up equal space */
+}
+
+.logo-container {
+    flex: 0 1 auto; /* Prevents logo from growing or shrinking */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+}
+
+.menu_link {
+    text-decoration: none; /* Removes underline from links */
+    color: #FFFFFF; /* Sets the text color to white */
+    font-size: 25px;
+    padding: 0 20px; /* Add some padding for spacing */
+}
+
+.menu_link:hover, .menu_link:active {
+    text-decoration: none; /* Ensures no underline on hover/active */
+    color: #FFFFFF; /* Keeps text color white on hover/active */
+}
+
+@media (max-width: 768px) {
+    .Header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-group {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-group .menu_link {
+        padding: 5px 0; /* Adjust padding for vertical layout */
+    }
+
+    .logo-container {
+        order: -1; /* Moves the logo container to the top */
+    }
+}
