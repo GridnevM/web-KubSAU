@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "Bliss Pro";
+    src: url("./../../fonts/BlissPro-ExtraLight.ttf");
+  }
+  
+  .Musei1 {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  .zag{
+    width: 663px;
+    height: 60px;
+    top: 120px;
+    left: 120px;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 59.7px;
+    text-align: left;
+    padding-bottom: 40px;
+    color:  #000000;
+}
+.textmu1{
+    width: 994px;
+    height: 204px;
+    top: 220px;
+    left: 122px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color:  #000000;
+}
