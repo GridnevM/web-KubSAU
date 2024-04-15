@@ -1,42 +1,26 @@
+import React from 'react';
 import logo from "./../../img/logo-white.png";
 import "./style.css";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
-    return ( 
-       <div className="Header">
-            <div className="menu">
-                <ul className="menu-list">
-                    <li className="menu-university">
-                        <NavLink to="/University" className="menu_link">
-                           <p>УНИВЕРСИТЕТ</p> 
-                        </NavLink>
-                    </li>
-                    <li className="menu-korpusa">
-                        <NavLink to ="/Korpusa" className="menu_link">
-                        <p>КОРПУСА</p>
-                        </NavLink>
-                    </li>
-                    <li >
-                    <NavLink to="/" className="logo">
-                    <img src={logo} alt="logo"/>
-                    </NavLink>
-                    </li>
-                    <li className="menu-musei">
-                        <NavLink to="/Musei" className="menu_link">
-                        <p>МУЗЕИ</p>
-                        </NavLink>
-
-                    </li>
-                    <li className="menu-garden">
-                        <NavLink to="/Dendrik" className="menu_link">
-                        <p>ДЕНДРАРИЙ</p>
-                        </NavLink>
-                    </li>
-                </ul>
+    return (
+        <div className="Header">
+            <div className="menu-group">
+                <NavLink to="/University" className="menu_link">УНИВЕРСИТЕТ</NavLink>
+                <NavLink to="/Korpusa" className="menu_link">КОРПУСА</NavLink>
+            </div>
+            <div className="logo-container">
+                <NavLink to="/" className="logo">
+                    <img src={logo} alt="logo" />
+                </NavLink>
+            </div>
+            <div className="menu-group">
+                <NavLink to="/Musei" className="menu_link">МУЗЕИ</NavLink>
+                <NavLink to="/Dendrik" className="menu_link">ДЕНДРАРИЙ</NavLink>
             </div>
         </div>
     );
 }
- 
+
 export default Header;

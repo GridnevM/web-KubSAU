@@ -1,18 +1,31 @@
 @font-face {
     font-family: "Bliss Pro";
-    src: url("./../../fonts/BlissPro-ExtraLight.ttf")
+    src: url("./../../fonts/BlissPro-ExtraLight.ttf");
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 .Footer {
-    display: flex; /* Используем flexbox */
-    justify-content:space-between; /* Распределяем элементы по краям контейнера */
-    align-items: center; /* Выравниваем по вертикали */
-    position: fixed;
+    margin-top: auto; /* Pushes the footer to the bottom */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Changed from fixed to relative */
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #262726; /* Цвет фона вашего подвала */
-    padding: 10px; /* Отступы вокруг содержимого */
+    background-color: #262726;
+    padding: 10px;
 }
 
 .adres .address-text {
@@ -23,15 +36,46 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     text-align: left;
+    
 }
 
+.telpot a {
+    display: inline-block; /* Make sure the padding affects the layout */
+    padding-right: 10px; /* Consistent right padding */
+    text-decoration: none; /* Removes underline from links */
+}
+
+/* Remove the specific padding-right from .telepot-text since it is now controlled at the anchor level */
 .telpot .telepot-text {
     color: #FFFFFF;
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
-    padding-right: 10px;
     letter-spacing: 0.02em;
     text-decoration: none;
     text-align: right;
+    padding: 10px;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .Footer {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 20px; /* Increase padding for better touch interaction */
+        text-align: center; /* Center align the text for better aesthetics */
+    }
+
+    .adres, .telpot {
+        margin-bottom: 10px; /* Add some space between the address and contact blocks */
+    }
+
+    .adres .address-text, .telpot .telepot-text {
+        font-size: 16px; /* Reduce the font size for smaller screens */
+        line-height: 20px; /* Adjust line height accordingly */
+    }
+
+    .telpot .telepot-text {
+        padding-right: 0; /* Remove padding-right as it is no longer right-aligned */
+    }
 }
