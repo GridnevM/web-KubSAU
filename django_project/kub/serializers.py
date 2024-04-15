@@ -1,8 +1,7 @@
 from rest_framework import serializers
 from .models import kub
 
-class StudentSerializer(serializers.ModelSerializer):
-
+class kubSerializer(serializers.ModelSerializer):
     class Meta:
-        model = kub 
-        fields = ('text')
+        model = kub
+        fields = '__all__'

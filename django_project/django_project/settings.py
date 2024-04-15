@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'corsheaders',
     'kub',
     'react_application',
-    'Musei',
 ]
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'react_application', 'Musei'), # Путь к папке с веб-страницами React
@@ -63,7 +62,9 @@ ROOT_URLCONF = 'django_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['react_application/src/pages/Musei/Musei1'],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'react_application', 'src', 'pages', 'Musei'),  # Путь к папке с веб-страницами React
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
