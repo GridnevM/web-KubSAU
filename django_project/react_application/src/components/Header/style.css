@@ -1,86 +1,72 @@
 @font-face {
     font-family: "Bliss Pro";
-    src: url("./../../fonts/BlissPro-ExtraLight.ttf")
-}
-.Header{
-    width: auto;
-    height: 60px;
-     background: #287828;
-}
-.logo img {
-    vertical-align: center;
-    width: 35px;
-    height: 59.17px;
-    top: 18px;
-    left: 936px;
-    margin-right: 128px;
-    cursor: pointer;
+    src: url("./../../fonts/BlissPro-ExtraLight.ttf");
 }
 
-.menu-list{
-    list-style: none;
-    display: flex;
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scroll */
 }
-.menu-university{
-    width: 131px;
-    height: 24px;
-    top: 18px;
-    margin-left: 367px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 23.88px;
-    text-align: left;
+
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Changed to space-between for proper alignment */
+    padding: 10px 0;
+    background: #287828;
     color: #F7F7F7;
-    margin-right: 148px;
-    cursor: pointer;
-}    
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.menu-group {
+    display: flex;
+    justify-content: space-around;
+    flex: 1; /* Makes both groups take up equal space */
+}
+
+.logo-container {
+    flex: 0 1 auto; /* Prevents logo from growing or shrinking */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+}
 
 .menu_link {
-    text-decoration: none; /* Убираем подчеркивание */
-    color: inherit; /* Наследуем цвет от родителя */
+    text-decoration: none; /* Removes underline from links */
+    color: #FFFFFF; /* Sets the text color to white */
+    font-size: 25px;
+    padding: 0 20px; /* Add some padding for spacing */
 }
 
-.menu_link:hover {
-    color: inherit; /* Цвет при наведении остаётся тем же, что и изначальный */
+.menu_link:hover, .menu_link:active {
+    text-decoration: none; /* Ensures no underline on hover/active */
+    color: #FFFFFF; /* Keeps text color white on hover/active */
 }
 
-.menu-korpusa{
-    width: 89px;
-    height: 24px;
-    top: 18px;
-    left: 690px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 23.88px;
-    text-align: left;
-    margin-right: 128px;
-    color: #F7F7F7;
-    cursor: pointer;
-}
-.menu-musei{
-    width: 64px;
-    height: 24px;
-    top: 18px;
-    left: 1110px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 23.88px;
-    text-align: left;
-    margin-right: 148px;
-    color: #F7F7F7;
-    cursor: pointer;
-    
-}
-.menu-garden{
-    width: 115px;
-    height: 24px;
-    top: 18px;
-    left: 1342px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 23.88px;
-    text-align: left;
-    margin-right: 422px;
-    color: #F7F7F7;
-    cursor: pointer;
+@media (max-width: 768px) {
+    .Header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-group {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-group .menu_link {
+        padding: 5px 0; /* Adjust padding for vertical layout */
+    }
+
+    .logo-container {
+        order: -1; /* Moves the logo container to the top */
+    }
 }
