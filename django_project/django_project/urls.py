@@ -13,3 +13,4 @@ urlpatterns = [
     re_path(r'^api/kub/(\d+)$', views.kub_detail), 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
 urlpatterns += staticfiles_urlpatterns()
+

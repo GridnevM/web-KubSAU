@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Bliss Pro";
+    src: url("./../fonts/BlissPro-ExtraLight.ttf");
+  }
+  
+  .Musei {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1920px;
+    max-width: 100%;
+    height: auto;
+    padding-top: 40px;
+    justify-content: space-between;
+  }
+  
+  .r1,.r2,.r3,.r4,.r5,.r6, .r7,.r8,.r9 {
+    width: 282px;
+    height: 378px;
+    border-radius: 20px;
+    margin-right: 126px;
+    cursor: pointer;
+    margin-bottom: 60px;
+  }
+  
+  .t1 {
+    width: 498px;
+    height: 60px;
+    top: 120px;
+    padding-bottom: 40px;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 59.7px;
+    text-align: left;
+    color: #000000;
+  }
+  
+  .t2 {
+    width: 994px;
+    height: 90px;
+    top: 220px;
+    left: 122px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #000000;
+  }
+  
+  .photo1, .photo2, .photo3, .photo4, .photo5, .photo6,.photo7,.photo8,.photo9{
+    width: 248px;
+    height: 220px;
+    padding-top: 30px;
+    margin-left: 17px;
+  }
+  
+  
+  .textm, .textm1, .textm2, .textm3, .textm4, .textm5,.textm6,.textm7,.textm8{
+    top: 270px;
+    width: 248px;
+    height: 48px;
+    left: 17px;
+    padding-top: 20px;
+    color: #f1f1f1;
+    font-family: "Bliss Pro", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1.2;
+    text-align: center;
+  }
+   .musei_link{
+    text-decoration: none; /* Убираем подчеркивание */
+    color: inherit; /* Наследуем цвет от родителя */
+   }
+  
+   @font-face {
+    font-family: "Bliss Pro";
+    src: url("./../fonts/BlissPro-ExtraLight.ttf");
+  }
+  
+  .Musei1 {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  .zag{
+    width: 663px;
+    height: 60px;
+    top: 120px;
+    left: 120px;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 59.7px;
+    text-align: left;
+    padding-bottom: 40px;
+    color:  #000000;
+  }
+  .textmu1{
+    width: 994px;
+    height: 204px;
+    top: 220px;
+    left: 122px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color:  #000000;
+  }
+  
