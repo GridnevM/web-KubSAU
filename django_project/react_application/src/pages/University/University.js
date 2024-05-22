@@ -34,17 +34,19 @@ const University = () => {
 
     return (
         <>
-            <h1>Slaider</h1>
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'row', margin: '20px 0' }}>
-                <button onClick={goToPrev} style={{ fontSize: '24px', fontWeight: 'bold', userSelect: 'none', marginRight: '20px' }}>{"<"}</button>
-                <div>
-                    {images.map((img, index) => (
-                        <div key={index} style={{ display: index === currentIndex ? 'block' : 'none' }}>
-                            <img src={img} alt={`Slide ${index}`} style={{ width: '100%', maxWidth: '600px' }} />
-                        </div>
-                    ))}
+            <h1 style={{ textAlign: 'center' }}>Slider</h1>
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', margin: '20px 0' }}>
+                <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <button onClick={goToPrev} style={{ fontSize: '24px', fontWeight: 'bold', userSelect: 'none', marginRight: '20px' }}>{"<"}</button>
+                    <div>
+                        {images.map((img, index) => (
+                            <div key={index} style={{ display: index === currentIndex ? 'block' : 'none' }}>
+                                <img src={img} alt={`Slide ${index}`} style={{ width: '100%', maxWidth: '600px' }} />
+                            </div>
+                        ))}
+                    </div>
+                    <button onClick={goToNext} style={{ fontSize: '24px', fontWeight: 'bold', userSelect: 'none', marginLeft: '20px' }}>{">"}</button>
                 </div>
-                <button onClick={goToNext} style={{ fontSize: '24px', fontWeight: 'bold', userSelect: 'none', marginLeft: '20px' }}>{">"}</button>
             </div>
             <style jsx>{`
                 @media (max-width: 768px) {

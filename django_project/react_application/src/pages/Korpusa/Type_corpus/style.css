@@ -1,0 +1,109 @@
+/* Общий стиль страницы */
+body {
+    background: #F1F1F1;
+    position: relative;
+    width: 1440px;
+    height: 1548px;
+}
+
+/* Корпус */
+.korpus-title {
+    position: absolute;
+    width: 640px;
+    height: 60px;
+    left: calc(50% - 640px/2 - 280px);
+    top: 120px;
+    font-family: 'Bliss Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: #000000;
+}
+
+/* Краткая информация */
+.short-info {
+    position: absolute;
+    width: 994px;
+    height: 204px;
+    left: 120px;
+    top: 660px;
+    font-family: 'Bliss Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+/* Полная информация */
+.full-info {
+    position: absolute;
+    width: 994px;
+    height: 444px;
+    left: 120px;
+    top: 904px;
+    font-family: 'Bliss Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+/* Слайдер */
+.slider {
+    position: absolute;
+    width: 1584px;
+    height: 400px;
+    left: -72px;
+    top: 220px;
+}
+
+/* Rectangle 11 */
+.rectangle-11 {
+    position: absolute;
+    width: 1000px;
+    height: 400px;
+    left: calc(50% - 1000px/2);
+    top: 220px;
+    background: #287828;
+}
+
+/* Слайдер с фотками корпуса */
+.slider-title {
+    position: absolute;
+    width: 599px;
+    height: 60px;
+    left: 421px;
+    top: 390px;
+    font-family: 'Bliss Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+/* Rectangle 14 */
+.rectangle-14 {
+    position: absolute;
+    width: 270px;
+    height: 400px;
+    left: 1242px;
+    top: 220px;
+    background: #61AA2A;
+}
+
+/* Rectangle 15 */
+.rectangle-15 {
+    position: absolute;
+    width: 270px;
+    height: 400px;
+    left: -72px;
+    top: 220px;
+    background: #61AA2A;
+}
+

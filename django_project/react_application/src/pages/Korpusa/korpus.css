@@ -8,11 +8,13 @@
     color: #000000;
     margin-bottom: 15px;
     font-size: 50px;
+    text-align: left; /* Center the title */
 }
 
 .main-description {
     margin-bottom: 50px;
     font-size: 30px;
+    text-align: left; /* Center the description */
 }
 
 .course {
@@ -21,11 +23,17 @@
     margin-bottom: 40px;
 }
 
-.photo-placeholder {
-    background: #4caf50; /* Placeholder color, replace with actual photo if available */
+.photo-container {
     width: 600px; /* Adjust as needed */
     height: 300px; /* Adjust as needed */
     margin-right: 100px; /* Increased margin to create a larger space */
+    overflow: hidden; /* Ensure the image fits within the container */
+}
+
+.korpus-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
 }
 
 .course-info {
