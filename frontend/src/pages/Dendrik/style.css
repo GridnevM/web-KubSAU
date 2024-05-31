@@ -1,0 +1,182 @@
+@font-face {
+    font-family: "Bliss Pro";
+    src: url("./../../fonts/BlissPro-ExtraLight.ttf");
+  }
+.j1{
+    width: 668px;
+    height: 60px;
+    margin-top: 120px;
+    margin-left: 120px;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 59.7px;
+    text-align: left;
+}
+.j2{
+    width: 998px;
+    height: 634px;
+    margin-top: 60px;
+    margin-left: 251px;
+
+}
+.j3{
+    width: 1200px;
+    height: 204px;
+    margin-top: 40px;
+    margin-left: 120px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: left;
+
+}
+.j4 {
+    width: 1200px;
+    height: 372px;
+    margin-left: 120px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.j5 {
+    width: 588px;
+    height: 372px;
+}
+
+.j6 {
+    width: 486px;
+    height: 372px;
+    margin-left: 220px; /* Adjust the margin as needed to create space between the image and text */
+    font-family: 'Bliss Pro', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    display: flex;
+    align-items: center; /* Center the text vertically */
+}
+
+.j7 {
+    width: 1200px;
+    height: 372px;
+    margin-left: 120px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.j8 {
+    width: 588px;
+    height: 372px;
+    margin-left: 220px;
+}
+
+.j9 {
+    width: 486px;
+    height: 372px;
+    margin-right: 20px; /* Adjust the margin as needed to create space between the text and the image */
+    font-family: 'Bliss Pro', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    display: flex;
+    align-items: center; /* Center the text vertically */
+}
+
+.j10 {
+    width: 1200px;
+    height: 372px;
+    margin-left: 120px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.j11 {
+    width: 588px;
+    height: 372px;
+}
+
+.j12 {
+    width: 486px;
+    height: 372px;
+    margin-left: 220px; /* Adjust the margin as needed to create space between the image and text */
+    font-family: 'Bliss Pro', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    display: flex;
+    align-items: center; /* Center the text vertically */
+}
+.j13 {
+    width: 1200px;
+    height: 372px;
+    margin-left: 120px;
+    margin-bottom: 100px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.j15 {
+    width: 588px;
+    height: 372px;
+    margin-left: 220px;
+}
+
+.j14 {
+    width: 486px;
+    height: 372px;
+    margin-right: 20px; /* Adjust the margin as needed to create space between the text and the image */
+    font-family: 'Bliss Pro', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    display: flex;
+    align-items: center; /* Center the text vertically */
+}
+
+/* Медиа-запрос для экранов шириной меньше 768px */
+@media (max-width: 768px) {
+    .j1 {
+        width: 90vw; /* изменение ширины */
+        margin-top: 5vw; /* изменение отступа сверху */
+        margin-left: 5vw; /* изменение отступа слева */
+        font-size: 8vw; /* изменение размера шрифта */
+        line-height: 1.2; /* изменение высоты строки */
+    }
+
+    .j2, .j3, .j4, .j7, .j10, .j13, .j15 {
+        width: 90vw; /* изменение ширины */
+        margin-left: 5vw; /* изменение отступа слева */
+        margin-top: 3vw; /* изменение отступа сверху */
+    }
+
+    .j6, .j9, .j12, .j14 {
+        width: 80vw; /* изменение ширины */
+        margin-left: 5vw; /* изменение отступа слева */
+        margin-right: 5vw; /* изменение отступа справа */
+        font-size: 4vw; /* изменение размера шрифта */
+        line-height: 1.2; /* изменение высоты строки */
+    }
+
+    .j5, .j8, .j11 {
+        width: 60vw; /* изменение ширины */
+        margin-left: 5vw; /* изменение отступа слева */
+    }
+}
+
+

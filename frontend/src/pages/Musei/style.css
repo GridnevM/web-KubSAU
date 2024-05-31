@@ -58,13 +58,11 @@
   padding-top: 30px;
   margin-left: 17px;
 }
-
-
-.textm, .textm1, .textm2, .textm3, .textm4, .textm5,.textm6,.textm7,.textm8{
+.textm, .textm1, .textm2, .textm3, .textm4, .textm5,.textm6,.textm7,.textm8 ,.textm9{
   top: 270px;
   width: 248px;
   height: 48px;
-  left: 17px;
+  margin-left: 17px;
   padding-top: 20px;
   color: #f1f1f1;
   font-family: "Bliss Pro", sans-serif;

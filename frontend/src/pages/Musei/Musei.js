@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
 import istor from "./img/исторический.png";
+import alleya from "./img/аллея.png";
+import zolog from "./img/зоолог.png";
+import poch from "./img/почвенный.png";
+import geo from "./img/геолог.png";
+import ot from "./img/энто.png"
+import pat from "./img/патолог.png"
+import anatom from "./img/анатом.png"
+import sport from "./img/sport.png"
 import './style.css';
 import { NavLink } from "react-router-dom";
 
@@ -89,7 +97,7 @@ const Musei = () => {
          </div>
 
          <div className="t2">
-            <p>На территории университета расположено 9 музеев и множество других памятников архитектуры, о которых Настя подготовит текст, а пока пару слов на латыни... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>На территории университета расположено 9 музеев и множество других памятников архитектуры</p>
          </div>
          <div className="container">
             <NavLink to="/Musei1" className="musei_link">
@@ -105,94 +113,110 @@ const Musei = () => {
             </div>
          </div>
          </NavLink>
+         <NavLink to="/Musei2" className="musei_link">
          <div className="r2" 
               onMouseEnter={handleMouseEnter2} 
               onMouseLeave={handleMouseLeave2}
               style={{ background: hovered2 ? '#287828' : '#61AA2A' }}>
             <div className="photo2">
-                <img src="" alt=""/>
+                <img src={alleya} alt="Алля славы"/>
             </div>
             <div className="textm1">
-               <p>Музей 2</p>
+               <p>Аллея славы</p>
             </div>
          </div>
+         </NavLink>
+         <NavLink to="/Musei3" className="musei_link">
          <div className="r3" 
               onMouseEnter={handleMouseEnter3} 
               onMouseLeave={handleMouseLeave3}
               style={{ background: hovered3 ? '#287828' : '#61AA2A' }}>
             <div className="photo3">
-                <img src="" alt=""/>
+                <img src={zolog} alt="Зоологический"/>
             </div>
             <div className="textm2">
-               <p>Музей 3</p>
+               <p>Зоологический музей</p>
             </div>
          </div>
+         </NavLink>
+         <NavLink to="/Musei4" className="musei_link">
          <div className="r4" 
               onMouseEnter={handleMouseEnter4} 
               onMouseLeave={handleMouseLeave4}
               style={{ background: hovered4 ? '#287828' : '#61AA2A' }}>
             <div className="photo4">
-                <img src="" alt=""/>
+                <img src={poch} alt="Почвеный музей"/>
             </div>
             <div className="textm3">
-               <p>Музей 4</p>
+               <p>Почвенный музей</p>
             </div>
          </div>
+         </NavLink>
+         <NavLink to="/Musei5" className="musei_link">
          <div className="r5" 
               onMouseEnter={handleMouseEnter5} 
               onMouseLeave={handleMouseLeave5}
               style={{ background: hovered5 ? '#287828' : '#61AA2A' }}>
             <div className="photo5">
-                <img src="" alt=""/>
+                <img src={geo} alt="Геологический музей"/>
             </div>
             <div className="textm4">
-               <p>Музей 5</p>
+               <p>Геологический музей</p>
             </div>
          </div>
+         </NavLink>
+         <NavLink to="/Musei6" className="musei_link">
          <div className="r6" 
               onMouseEnter={handleMouseEnter6} 
               onMouseLeave={handleMouseLeave6}
               style={{ background: hovered6 ? '#287828' : '#61AA2A' }}>
             <div className="photo6">
-                <img src="" alt=""/>
+                <img src={ot} alt="Энтомологический музей"/>
             </div>
             <div className="textm5">
-               <p>Музей 6</p>
+               <p>Энтомологический музей</p>
             </div>
          </div>
+         </NavLink>
+         <NavLink to="/Musei7" className="musei_link">
          <div className="r7" 
               onMouseEnter={handleMouseEnter7} 
               onMouseLeave={handleMouseLeave7}
               style={{ background: hovered7 ? '#287828' : '#61AA2A' }}>
             <div className="photo7">
-                <img src="" alt=""/>
+                <img src={pat} alt="Паталогоанатомический музей"/>
             </div>
             <div className="textm6">
-               <p>Музей 7</p>
+               <p>Паталогоанатомический музей</p>
             </div>
          </div>
+         </NavLink>
+         <NavLink to="/Musei8" className="musei_link">
          <div className="r8" 
               onMouseEnter={handleMouseEnter8} 
               onMouseLeave={handleMouseLeave8}
               style={{ background: hovered8 ? '#287828' : '#61AA2A' }}>
             <div className="photo8">
-                <img src="" alt=""/>
+                <img src={anatom} alt="анатомический"/>
             </div>
-            <div className="textm7">
-               <p>Музей 8</p>
+            <div className="textm8">
+               <p>Анатомический музей</p>
             </div>
          </div>
+         </NavLink>
+         <NavLink to="/Musei9" className="musei_link">
          <div className="r9" 
               onMouseEnter={handleMouseEnter9} 
               onMouseLeave={handleMouseLeave9}
               style={{ background: hovered9 ? '#287828' : '#61AA2A' }}>
             <div className="photo9">
-                <img src="" alt=""/>
+                <img src={sport} alt="2"/>
             </div>
-            <div className="textm8">
-               <p>Музей 9</p>
+            <div className="textm9">
+               <p>Музей спортивных достижений</p>
             </div>
          </div>
+         </NavLink>
         </div>
         </div>
      );
