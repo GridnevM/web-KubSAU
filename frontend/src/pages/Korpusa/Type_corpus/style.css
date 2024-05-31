@@ -1,0 +1,52 @@
+/* Общий стиль страницы */
+body {
+    background: #F1F1F1;
+    width: 100%;
+    margin: 0;
+    font-family: 'Bliss Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Контейнер для всего контента */
+.korpus {
+    flex: 1;
+}
+
+/* Корпус */
+.korpus-title {
+    margin: 20px auto;
+    width: 1000px;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: #000000;
+    text-align: left;
+}
+
+/* Краткая информация */
+.short-info {
+    margin: 20px auto;
+    width: 994px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+/* Полная информация */
+.full-info {
+    margin: 20px auto;
+    width: 994px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+
+
+

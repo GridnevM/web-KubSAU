@@ -1,0 +1,93 @@
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 40px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider-images img {
+    width: 100%;
+    margin-top: 40px;
+    display: none;
+}
+
+.slider-images img.active {
+    display: block;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.t19{
+    width: 994px;
+    height: 204px;
+    margin-top: 40px;
+    margin-left: 500px;
+    font-size: 20px;
+    margin-bottom: 100px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+.t29{
+    width: 1130px;
+    height: 60px;
+    margin-top: 80px;
+    margin-left: 320px;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 59.7px;
+    text-align: left;
+
+}
+
+/* Медиа-запрос для экранов шириной меньше 768px */
+@media (max-width: 768px) {
+    .slider {
+        max-width: 90%; /* изменение максимальной ширины */
+        margin-top: 20px; /* изменение отступа сверху */
+    }
+
+    .t19 {
+        width: 90%; /* изменение ширины */
+        margin-left: auto; /* отмена левого отступа */
+        margin-right: auto; /* отмена правого отступа */
+        margin-top: 20px; /* изменение отступа сверху */
+        font-size: 16px; /* изменение размера шрифта */
+        margin-bottom: 50px; /* изменение нижнего отступа */
+        line-height: 1.5; /* изменение высоты строки */
+    }
+
+    .t29 {
+        width: 90%; /* изменение ширины */
+        margin-left: auto; /* отмена левого отступа */
+        margin-right: auto; /* отмена правого отступа */
+        margin-top: 40px; /* изменение отступа сверху */
+        font-size: 30px; /* изменение размера шрифта */
+        line-height: 1.2; /* изменение высоты строки */
+    }
+}
